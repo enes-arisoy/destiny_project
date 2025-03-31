@@ -1,0 +1,44 @@
+@media (max-width:800px) {
+    header {
+
+        position: relative;
+
+        nav {
+            display: none;
+        }
+
+        #menu-btn {
+            display: block;
+
+        }
+
+        .open-nav {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 75px;
+            right: 20px;
+            padding: 20px;
+            background-color: #323443;
+            border-radius: 20px;
+            z-index: 100 !important;
+
+        }
+    }
+
+    .hero-inner {
+        margin: 0 auto !important;
+    }
+
+    .windows-section {
+        grid-template-columns: 1fr;
+
+        h1 {
+            text-align: center;
+        }
+
+        button {
+            margin: 0 auto;
+        }
+    }
+}
