@@ -1,4 +1,13 @@
-@media (max-width:800px) {
+@media (max-width: 1600px) {
+    .last-projects-parts {
+        flex-direction: column-reverse;
+
+      
+    }
+}
+
+
+@media (max-width:900px) {
     header {
 
         position: relative;
@@ -28,10 +37,12 @@
 
     .hero-inner {
         margin: 0 auto !important;
+
     }
 
     .windows-section {
         grid-template-columns: 1fr;
+        gap: 20px;
 
         h1 {
             text-align: center;
@@ -40,5 +51,49 @@
         button {
             margin: 0 auto;
         }
+    }
+
+    .innovation,
+    .innov-right-section {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    .innov-bottom {
+        display: grid;
+        gap: 20px;
+    }
+
+
+    .project-hero {
+        h1 {
+            padding: 20px;
+        }
+
+        .hero-bottom,
+        .bottom-part1,
+        .bottom-part2 {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center !important;
+            width: 100% !important;
+        }
+    }
+    
+    .big-image {
+           
+        padding: 20px 25px 0 !important;
+     }
+
+     .arrow {
+         width: 15px;
+     }
+    
+}
+
+@media (max-width: 620px) {
+    .sect-1 {
+        min-width: 90px !important;
+        justify-content: center;
     }
 }

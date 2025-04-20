@@ -31,6 +31,8 @@ a {
 
 p {
     font-family: sans-serif;
+    color: var(--gray);
+    line-height: 1.5;
 }
 
 button {
@@ -45,6 +47,10 @@ button {
     }
 }
 
+section {
+    padding: 25px;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -53,6 +59,7 @@ header {
     position: sticky;
     top: 0;
     background-color: var(--black);
+    z-index: 1;
 
     nav {
         display: flex;
@@ -130,10 +137,11 @@ header {
 .windows-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 2rem;
+
+    align-items: center;
 
     .sect-left-side {
-        padding: 20px;
+
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -148,6 +156,283 @@ header {
 
         button {
             width: 110px;
+        }
+    }
+
+    .sect-right-side {
+
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+
+        .sect-1 {
+            background: url(../images/sec2.jpg) center/cover repeat fixed;
+            border-radius: 30px;
+            height: 400px;
+            min-width: 200px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            margin: 0 auto;
+        }
+    }
+}
+
+.innovation {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    gap: 40px;
+
+    .innov-left-section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h1 {
+            font-size: 2rem;
+            white-space: nowrap;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+    }
+
+    .innov-right-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+
+        .card {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            padding: 10px;
+
+            video {
+                width: 150px;
+                margin-bottom: 20px;
+
+            }
+
+            h4 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                line-height: 1.5;
+            }
+        }
+    }
+
+}
+
+.innov-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.above-footer {
+    display: grid;
+    gap: 20px;
+
+    .above-footer-part {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+
+        h4 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .inner-part {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+
+            span {
+                color: rgba(255, 255, 255, 0.5);
+            }
+
+            img {
+                width: 80px;
+            }
+        }
+    }
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 20px;
+    gap: 30px;
+
+
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        a {
+            color: var(--gray);
+
+            &:hover {
+                transform: translateX(-5px);
+            }
+        }
+
+        form {
+            display: flex;
+
+            gap: 20px;
+
+            input {
+                height: 2rem;
+                width: 100%;
+                border-radius: 5px;
+                text-indent: 10px;
+                background-color: rgba(255, 255, 255, 0.2);
+                color: white;
+            }
+
+            button {
+                &:hover {
+                    background-color: var(--green);
+                }
+            }
+        }
+    }
+
+
+}
+
+.copyright {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.project-hero {
+    h1 {
+        font-size: 3.5rem;
+        line-height: 1.2;
+        padding: 80px;
+        font-size: 56px;
+        background-image: linear-gradient(45deg, #856bf7, #00ddeb);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    .hero-bottom {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        align-items: center;
+        margin-top: 40px;
+        gap: 70px;
+
+        .bottom-part1 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 50%;
+
+            h4 {
+                font-size: 2.3rem;
+            }
+
+            p {
+                line-height: 1.8rem;
+
+            }
+
+        }
+
+        .bottom-part2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 80px;
+
+            .part2-card {
+                background-color: rgba(255, 255, 255, 0.118);
+                border-radius: 20px;
+                padding: 30px;
+                text-align: center;
+                position: relative;
+
+                h3 {
+                    margin-bottom: 10px;
+                }
+
+                img {
+                    position: absolute;
+                    top: -35%;
+                    transform: translate(-50%);
+
+                    width: 50px;
+                }
+            }
+
+        }
+    }
+}
+
+.last-projects {
+
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    gap: 50px;
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .last-projects-parts {
+        display: flex;
+        width: 75%;
+        gap: 50px;
+
+        .parts-left-side {
+            display: flex;
+            flex-direction: column;
+            position: relative !important;
+            .big-image {
+                
+                padding: 40px 60px 0;
+                background-color: rgba(255, 255, 255, 0.118);
+                transition: all .3s ease !important;
+
+                &:hover {
+                    background-image: linear-gradient(45deg, #528ade 20%, #00f261c3 80%);
+
+                }
+            }
+
+            .arrow {
+                background-color: rgba(207, 89, 233, 0.525);
+                position: absolute;
+                right: 5px;
+                top: 5px;
+            }
+        }
+
+        .parts-right-side {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+
+            h6 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
         }
     }
 }
